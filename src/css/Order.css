@@ -1,0 +1,106 @@
+/* src/css/Order.css */
+
+.order {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.order h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.order p {
+  text-align: center;
+  color: #666;
+  font-size: 1rem;
+}
+
+.order ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  flex-wrap: nowrap; /* Ensure items are not wrapped */
+}
+
+.order-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-size: 1rem;
+  color: #333;
+  flex: 2;
+}
+
+.item-quantity {
+  font-size: 1rem;
+  color: #333;
+  margin: 0 10px;
+  flex: 1;
+  display: flex;
+  align-items: center; /* Center the quantity vertically */
+}
+
+.item-price {
+  font-size: 1rem;
+  color: #333;
+  flex: 1;
+  text-align: right; /* Align price to the right */
+}
+
+.add-button, .subtract-button {
+  background-color: #ffcc00;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.add-button:hover, .subtract-button:hover {
+  background-color: #ffb800;
+}
+
+.subtract-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.send-order-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+.send-order-button:hover {
+  background-color: #0056b3;
+}
+
+.send-order-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

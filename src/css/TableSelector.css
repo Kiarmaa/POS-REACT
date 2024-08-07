@@ -1,0 +1,62 @@
+/* src/css/TableSelector.css */
+
+.table-selector {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px; /* Adjust width as needed */
+  margin: 0 auto;
+}
+
+.table-selector h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.table-selector ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Adjust column size */
+  gap: 10px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.table-selector li {
+  margin: 0; /* Remove margin to use grid gaps */
+}
+
+.table-selector button {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.table-selector button:hover {
+  background-color: #0056b3;
+}
+
+.table-selector button:active {
+  background-color: #003d80;
+}
+
+.table-selector button.selected {
+  background-color: #28a745; /* Green color for selected */
+}
+
+.table-selector button.selected:hover {
+  background-color: #218838; /* Darker green on hover for selected */
+}
+
+.table-selector button.selected:active {
+  background-color: #1e7e34; /* Even darker green on click for selected */
+}

@@ -1,0 +1,60 @@
+/* CSS for Menu Section */
+.menu {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%; /* Prevent stretching */
+  margin: 0 auto;
+}
+
+.menu-categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow-x: auto;
+  padding: 10px;
+  background: #f8f8f8; /* Light background for better visibility */
+}
+
+.category-button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.category-button.active {
+  background-color: #007bff; /* Active button color */
+  color: white;
+  border-color: #007bff;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 15px; /* Space between items */
+  padding: 10px;
+}
+
+.menu-item {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
+}
+
+.menu-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-name {
+  display: block;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Removed .item-price related styles */

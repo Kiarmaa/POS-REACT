@@ -1,0 +1,64 @@
+/* src/css/App.css */
+
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.header {
+  grid-column: 1 / span 2;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu {
+  flex: 1;
+}
+
+.tables {
+  flex: 1;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.kitchen {
+  grid-column: 1 / span 2;
+  margin-top: 20px;
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+  }
+
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .menu, .tables, .right-section {
+    width: 100%;
+  }
+
+  .kitchen {
+    grid-column: 1;
+  }
+}

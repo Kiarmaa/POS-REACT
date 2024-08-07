@@ -1,0 +1,26 @@
+/* src/css/index.css */
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+button {
+  cursor: pointer;
+  color: #333;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
